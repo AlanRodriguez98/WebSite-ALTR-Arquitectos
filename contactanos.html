@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALTR Arquitectos</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="style.css"> 
+
+</head>
+
+<body>
+    <header>
+    <div id="logo"></div>
+    <nav>
+    <a title="ALTR Arquitectos" a href="Arquitectura.html"><img src="Imagenes/Logo.jpeg" alt="ALTR Arquitectos" width="110" height="110"></a><B><FONT COLOR="white">.............................</FONT>
+    <ul><B><FONT COLOR="white">........................</FONT>
+
+    <li><a href="">PROYECTOS</a></li><a title="Instagram ALTR_Arquitectos" href="https://www.instagram.com/altr_arquitectos/"><img src="iconos2/instagram.ico" alt="Instagram" widt="40" height="40"></a><B><FONT COLOR="white">.....</FONT>
+
+    <li> <a href="nosotros.html">NOSOTROS</a></li><a title="TikTok ALTR_Arquitectos" href="https://www.tiktok.com/@altr_arquitectos"><img src="iconos2/tiktok.ico" alt="tiktok" widt="40" height="40"></a><B><FONT COLOR="white">.....</FONT>
+
+    <li><a href="contactanos.html">CONTACTO</a></li><a title="ALTR_Arquitectos" href="https://www.youtube.com/"><img src="iconos2/youtube.ico" alt="Youtube-ALTR_Arquitectos" widt="40" height="40"></a><B><FONT COLOR="white">.....</FONT>
+
+    </li><a title="Facebook ALTR Arquitectos" href="https://www.facebook.com/profile.php?id=100076305790117"><img src="iconos2/Facebook.ico" alt="ALTR Arquitectos" widt="40" height="40"></a><B><FONT COLOR="white">.....</FONT>
+    </ul><br>
+        <!--Contendor-->
+    </header>
+
+        <!--Contendor-->
+    </header>
+    <main class="contenedor">
+        <center><h1 class="fw-300 centrar-texto">CONTÁCTANOS</h1></center>
+
+
+
+
+        <div class="contenido-nosotros">
+             <div class="imagen">
+                 
+             </div>
+             <div class="texto-nosotros">
+                
+
+
+            <center>
+     <form id="form" action="" class="form">
+<h3 class="tag"><span><FONT SIZE=5>*No olvides llenar todos los campos*</span></h3></FONT>
+<label for="name"><FONT SIZE=4>Nombre:</label></FONT>
+<FONT SIZE=3><input name="name" required type="text" id="name" placeholder="Tu nombre completo"><br>
+<label for="email"><FONT SIZE=4>E-mail: </label></FONT>
+<FONT SIZE=3><input name="email" type="text" id="email" required placeholder="ejemplo@hotmail.com"><font></font><br>
+<label for="message"><FONT SIZE=4>Mensaje</label></FONT>
+<FONT SIZE=4><textarea id="message" name="message" id="" cols="30" rows="10"></textarea></FONT>
+<button type="submit" class="btn primary full"><FONT SIZE=4>Enviar Mensaje</button></FONT><br><br>
+<FONT SIZE=4><INPUT type="reset"></INPUT></FONT>
+           </center>
+     </form>
+        <a href="alandejesus98@hotmail.com" id="trucazo"></a>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    const $form = document.querySelector('#form')
+    const $buttonMailto = document.querySelector('#trucazo')
+
+    $form.addEventListener('submit', handleSubmit)
+
+    function handleSubmit(event) {
+      event.preventDefault()
+      const form = new FormData(this)
+      $buttonMailto.setAttribute('href', `mailto:alanjesusjesus2015@gmail.com?subject=nombre ${form.get('name')}  correo ${form.get('email')}&body=${form.get('message')}`)
+      $buttonMailto.click()
+    }
+  </script>
+</center>
+
+        </div>
+        </div>
+        </main>
+
+    
+
+        <div class="seccion-inferior contenedor seccion">
+        <section class="blog">
+
+        </section>
+        </div>
+
+    
+
+
+
+   <footer class="footer-sitio">
+        <div class="contenedor contenedor-footer">
+            <section class="nosotros">
+                <h2>ALTR Arquitectos </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Eveniet dolorum quod numquam aliquid. Labore dolores, nihil quibusdam
+                      totam non quo unde odit, eius laboriosam 
+                    natus ipsum aliquam molestiae voluptate beatae.
+                </p>
+            </section>
+            <section class="menu">
+                <h2>Menu de navegacion</h2>
+                <nav>
+                    <a href="#">Proyectos </a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="contactanos.html">Contactos</a>
+                </nav> 
+            </section>
+        </div><br>
+    <img src="iconos/ffacebook.ico"  width="25" height="25"><font color="white">ALTR Arquitectos.</font>
+    <img src="iconos/yyoutube.ico"  width="25" height="25"><font color="white">ALTR Arquitectos.</font>
+    <img src="iconos/ttiktok.ico"  width="25" height="25"><font color="white">ALTR Arquitectos.</font>
+    <img src="iconos/insta.ico"  width="25" height="25"><font color="white">ALTR Arquitectos.</font><br>
+    <img src="iconos/twitter.ico"  width="25" height="25"><font color="white">@ALTR Arquitectos.</font>
+    <img src="iconos/gmail.ico"  width="25" height="25"><font color="white">altr_arquitectos@gmail.com</font>
+    <img src="iconos/whatsapp.ico"  width="25" height="25"><font color="white">56 31 89 21 78</font>
+    </footer>
+
+
+</body>
+</html>

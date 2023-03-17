@@ -1,0 +1,282 @@
+
+  html {
+    font-size: 62.5%;
+     box-sizing: border-box;
+      }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    /* Tipo de letra */
+    font-family: "PT Sans", sans-serif;
+    color: var(--just-white);
+  }
+  h1 {
+    font-size: 3.8rem;
+  }
+  h2 {
+    font-size: 3rem;
+    line-height: 2.8rem;
+  }
+  h3 {
+    font-size: 2.2rem;
+  }
+  h4 {
+    font-size: 2.8rem;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+ 
+ 
+
+  /*Querys*/
+  @media (max-width: 768px) {
+    .img1 {
+      background-size: cover;
+      position: relative;
+      width: 300px;
+      height: 128px;
+      left: 300px;
+    }
+
+    .textomore h3{
+      font-size: 4.5rem;
+    }
+  }
+  
+  /* CARDS */
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 360px);
+    gap: 26px;
+    place-content: center;
+  }
+  .product-card {
+    width: 360px;
+  }
+  .product-card img {
+    width: 440px;
+    height: 440px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  .product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+  }
+  .product-info figure {
+    margin: 0;
+  }
+  .product-info figure img {
+    width: 35px;
+    height: 35px;
+  }
+  .product-info div p:nth-child(1) {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
+  .product-info div p:nth-child(2) {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--bitcoin-orange)
+  }
+  @media (max-width: 640px) {
+    .cards-container {
+      grid-template-columns: repeat(auto-fill, 140px);
+    }
+    .product-card {
+      width: 140px;
+    }
+    .product-card img {
+      width: 140px;
+      height: 140px;
+    }
+  }
+  
+  footer {
+    padding: 40px;
+    text-align: center;
+  }
+  .contenedor .footerp {
+    line-height: 1.8rem;
+    font-weight: 200;
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  .whats {
+    position: relative;
+    height: 55px;
+    left: 10px;
+  }
+  .correo {
+    position: relative;
+    height: 55px;
+    left: 10px;
+  }
+  .whatsp {
+   display: none;
+  }
+  .correop {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    footer {
+      text-align: justify;
+    }
+  
+    .correop {
+      position: relative;
+      height: 55px;
+      left: 680px;
+      bottom: 150px;
+      font-size: 15px;
+    }
+  }
+  
+  header{
+    background-color: white;
+  }
+  body{
+    background-color: white;
+  }
+
+
+  #logo{
+    margin: auto;
+    height: 30px;
+    width: 320px;
+    text-align: center;
+  }
+
+  
+ nav{
+   height: 100px;
+
+   text-align: center;
+ }
+
+ nav ul{
+    list-style: none;
+    display: inline-block;
+    padding:10px;
+    text-align: center;
+ }
+
+ nav ul li{
+     float: left;
+     margin-top: 5 px;
+ }
+
+ nav ul li a {
+     color: black;
+     font-weight: bold;
+     text-decoration: none;
+     font-size: 16px;
+     padding: 15px;
+ }
+
+ nav ul li a:hover{
+   background-color: #929fb3;
+ }
+
+
+div:hover {
+    filter: saturate(320%);
+}
+/* Fotter */
+.footer-sitio{
+  background-color: #000000;
+  padding-top: 40px;
+  margin-top: 60px;
+  color: #ffffff;
+  font-size: 1.7rem;
+  font-family: "Calibri";
+  text-align: center;
+}
+.footer-sitio h2{
+  color: #ffffff;
+  
+}
+.footer-sitio a{
+  color:#ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  margin-right: 20px;
+}
+.footer-sitio a:last-of-type{
+  margin-right:10px ;
+}
+
+@media (min-width:768px){
+  .footer-sitio .nosotros{
+      float:left;
+      width: 50%;
+      text-align: right;
+      text-align: left;
+
+  }
+
+
+/*FORMULARIO*/
+  *{box-sizing:border-box;}
+
+form{
+  width:500px;
+  padding:16px;
+  border-radius:10px;
+  margin:auto;
+  background-color:#ccc;
+}
+
+form label{
+  width:72px;
+  font-weight:bold;
+  display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+  width:180px;
+  padding:3px 10px;
+  border:1px solid #f6f6f6;
+  border-radius:3px;
+  background-color:#f6f6f6;
+  margin:8px 0;
+  display:inline-block;
+}
+
+form input[type="submit"]{
+  width:100%;
+  padding:8px 16px;
+  margin-top:32px;
+  border:1px solid #000;
+  border-radius:5px;
+  display:block;
+  color:#fff;
+  background-color:#000;
+} 
+
+form input[type="submit"]:hover{
+  cursor:pointer;
+}
+
+textarea{
+  width:100%;
+  height:300px;
+  border:1px solid #f6f6f6;
+  border-radius:3px;
+  background-color:#f6f6f6;     
+  margin:8px 0;
+  /*resize: vertical | horizontal | none | both*/
+  resize:none;
+  display:block;
+}
